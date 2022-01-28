@@ -1,0 +1,26 @@
+%% Example Class Diagram
+%% for documentation see here: https://mermaid-js.github.io/mermaid/#/classDiagram
+
+classDiagram
+    class UmlDiagram {
+        Shape[] shapes
+        void render()
+    }
+    class Shape {
+        int numberOfSides
+        double calculateArea()
+    }
+    class Square
+    class Polygon
+    class Circle {
+    double radius
+    }
+
+    UmlDiagram "1" *-- "many" Shape
+
+    Shape <|-- Square
+    Shape <|-- Polygon
+    Shape <|-- Circle
+
+    Square : (numberOfSides = 4)
+    

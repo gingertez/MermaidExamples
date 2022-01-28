@@ -1,0 +1,9 @@
+%% Example Flowchart
+%% for documentation see here: https://mermaid-js.github.io/mermaid/#/flowchart
+
+graph TD
+    A[Start] -->
+    B[Do Activity 1] -->
+    C{Activity 2 to be done?} -->|yes| D[Activity done]
+    D --> E[End]
+    C -->|no|E

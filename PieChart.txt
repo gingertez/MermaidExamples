@@ -1,4 +1,7 @@
 pie 
+    %% Example Pie Chart
+    %% for documentation see here: https://mermaid-js.github.io/mermaid/#/pie
+
     title Fast Food Popularity
         "MacDonald's" : 386
         "KFC" : 85

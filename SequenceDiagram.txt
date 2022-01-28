@@ -1,0 +1,26 @@
+%% Example Sequence Diagram
+%% for documentation see here: https://mermaid-js.github.io/mermaid/#/sequenceDiagram
+
+sequenceDiagram
+    actor C as Customer
+    participant S as Service
+    participant DB as Storage
+
+    activate C
+    C -->> S : Request information
+    activate S
+    S -->> S : Verify request
+    S -->> DB : Execute query
+    activate DB
+    alt Data Not Found
+      DB -->> S: return "empty" data response
+      S -->> C: return "Data not found" message
+    else Data Found
+      DB -->> S : return Data
+      deactivate DB
+      S -->> S : Format data
+      S -->> C : Return information
+    end
+    deactivate S
+    deactivate C
+    

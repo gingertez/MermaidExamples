@@ -1,8 +1,8 @@
-%% Example Sequence Diagram
-%% for documentation see here: https://mermaid-js.github.io/mermaid/#/sequenceDiagram
-
 sequenceDiagram
-    actor C as Customer
+    %% Example Sequence Diagram
+    %% for documentation see here: https://mermaid-js.github.io/mermaid/#/sequenceDiagram
+    
+    participant C as Customer
     participant S as Service
     participant DB as Storage
 
@@ -23,4 +23,3 @@ sequenceDiagram
     end
     deactivate S
     deactivate C
-    

@@ -1,0 +1,12 @@
+%% Example State Diagram
+%% for documentation see here: https://mermaid-js.github.io/mermaid/#/stateDiagram
+
+stateDiagram-v2
+    state "Stationery" as S
+    state "In Motion" as IM
+    [*] --> S
+    S --> [*]
+    S --> IM
+    IM --> S
+    IM --> Collided
+    Collided --> [*]

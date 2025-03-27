@@ -21,6 +21,3 @@ classDiagram
     Shape <|-- Square
     Shape <|-- Polygon
     Shape <|-- Circle
-
-    Square : (numberOfSides = 4)
-    
